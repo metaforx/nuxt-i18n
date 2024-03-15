@@ -2,5 +2,5 @@
     const { t } = useI18n()
 </script>
 <template>
-    <div>{{ t('work') }} foo</div>
+    <div>{{ t('work') }} Advanced</div>
 </template>

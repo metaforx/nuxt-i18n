@@ -31,19 +31,24 @@ export default defineNuxtConfig({
     customRoutes: 'config',
     pages: {
       contact: {
+        en: '/contact', // -> /contact
         de: '/kontakt', // -> /kontakt
       },
-      'tree': {
-        de: '/baum', // -> /arbeiten
-      },
-      'work/index': {
+      work: {
+        en: '/work', // -> /work
         de: '/arbeiten', // -> /arbeiten
       },
-      'work-foo': {
-        de: '/arbeiten/foo', // -> /arbeiten
+      'work/index': {
+        en: '/work', // -> /work
+        de: '/arbeiten', // -> /arbeiten
       },
       'work/[slug]': {
+        en: '/work/[slug]', // -> /work
         de: '/arbeiten/[slug]', // -> /arbeiten
+      },
+      'work/advanced': {
+        en: '/work/advanced', // -> /work
+        de: '/arbeiten/fortgeschritten', // -> /arbeiten
       },
     },
   },

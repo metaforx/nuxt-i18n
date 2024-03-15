@@ -2,5 +2,5 @@
     const { t } = useI18n()
 </script>
 <template>
-    <div>{{ t('work') }}</div>
+    <div>{{ t('work') }} Index</div>
 </template>

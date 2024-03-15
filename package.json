@@ -9,8 +9,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
   "devDependencies": {
-    "@nuxtjs/i18n": "^8.1.1",
-    "nuxt": "^3.10.3"
+    "@nuxtjs/i18n": "^8.2.0"
   }
 }
