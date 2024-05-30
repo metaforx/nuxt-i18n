@@ -10,11 +10,16 @@
 <template>
     <div>
         <NuxtLinkLocale to="work">{{ t('work') }}</NuxtLinkLocale> / 
-        <NuxtLinkLocale :to="'work-slug'">{{ t('work') }} Foo</NuxtLinkLocale> / 
         <NuxtLinkLocale :to="'work-advanced'">{{ t('work') }} Advanced</NuxtLinkLocale> / 
         <ul>
             <li v-for="slug in slugs" :key="slug">
-                <NuxtLink :to="localePath(`work-${slug}`)"> View {{ slug }} </NuxtLink>
+                <NuxtLinkLocale 
+                    :to="{
+                        name: 'work-slug',
+                        params: { slug: `${slug}` }
+                    }">
+                    {{ $t('view') }} {{ slug }}
+                </NuxtLinkLocale>
             </li>
         </ul>
     </div>
